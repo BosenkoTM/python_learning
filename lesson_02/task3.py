@@ -6,4 +6,6 @@
 number1 = int(raw_input('Введите длину первого катета: '))
 number2 = int(raw_input('Введите длину второго катета: '))
 
-print('Длина гипотенузы: {}'.format((number1 ** 2 + number2 ** 2) ** 0.5))
+hypotenuse = (number1 ** 2 + number2 ** 2) ** 0.5
+
+print('Длина гипотенузы: {}'.format(hypotenuse))
