@@ -2,7 +2,7 @@
 
 Михаил https://github.com/Zarbul/Python-Learning/
 
-Сергей
+Сергей https://github.com/0mUltramar/Manual-snake
 
 Алексей
 
@@ -10,7 +10,7 @@
 
 Владимир П.
 
-Олег 
+Олег https://github.com/IStealYourSkill/python
 
 Саша https://github.com/groall/python_learning
 
