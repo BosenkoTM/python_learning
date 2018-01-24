@@ -7,7 +7,7 @@
 a = int(input('Введите число a: '))
 b = int(input('Введите число b: '))
 
-if a % 10 or b % 10:
+if not(a % 10) or not(b % 10):
     print('оканчивается')
 else:
     print('НЕ оканчивается')
