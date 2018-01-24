@@ -8,7 +8,7 @@
 
 Владимир Р. https://github.com/rvladimir001/hello_world_python
 
-Владимир П.
+Владимир П. https://github.com/vofchik/python_learning
 
 Олег https://github.com/IStealYourSkill/python
 
