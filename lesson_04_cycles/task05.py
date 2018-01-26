@@ -15,9 +15,9 @@ if xInt < 1:
     exit()
 
 count = 0
-for i in range(0, len(x)):
-    iInt = int(x[i])
-    if iInt % 2 == 0:
+while xInt != 0:
+    if xInt % 2 == 0:
         count += 1
+    xInt //= 10
 
 print(count)

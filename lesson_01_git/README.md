@@ -61,3 +61,17 @@ https://losst.ru/kak-polzovatsya-git-dlya-nachinayushhih
 https://git-scm.com/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git
 https://tproger.ru/translations/git-quick-start/
 видосики https://habrahabr.ru/post/322424/
+
+
+```python
+comp = 1
+for i in range(0, 3):
+    comp *= int(x[i])
+
+
+count = 0
+for i in range(0, len(x)):
+    iInt = int(x[i])
+    if iInt % 2 == 0:
+        count += 1
+```

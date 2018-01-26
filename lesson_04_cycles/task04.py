@@ -14,8 +14,12 @@ if xInt < 100 or xInt > 999:
     print("Число не трехзначное")
     exit()
 
+
+print("Произведение цифр введёного числа ", comp)
+
 comp = 1
-for i in range(0, 3):
-    comp *= int(x[i])
+while xInt != 0:
+    comp *= xInt % 10
+    xInt //= 10
 
 print("Произведение цифр введёного числа ", comp)
