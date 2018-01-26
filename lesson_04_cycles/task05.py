@@ -14,7 +14,6 @@ if xInt < 1:
     print("Число не натуральное")
     exit()
 
-
 count = 0
 for i in range(0, len(x)):
     iInt = int(x[i])

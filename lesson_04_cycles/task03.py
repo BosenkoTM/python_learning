@@ -21,7 +21,6 @@ for i in range(1, xInt):
 
 print("Сумма", sumNumbers)
 
-
 sumNumbers = 0
 i = 1
 while i < xInt:
