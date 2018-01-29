@@ -64,14 +64,7 @@ https://tproger.ru/translations/git-quick-start/
 
 
 ```python
-comp = 1
-for i in range(0, 3):
-    comp *= int(x[i])
 
 
-count = 0
-for i in range(0, len(x)):
-    iInt = int(x[i])
-    if iInt % 2 == 0:
-        count += 1
+
 ```
