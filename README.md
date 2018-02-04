@@ -4,7 +4,7 @@
 
 Сергей https://github.com/0mUltramar/Manual-snake
 
-Алексей
+Алексей https://github.com/drklauss/python_learning
 
 Владимир Р. https://github.com/rvladimir001/hello_world_python
 
