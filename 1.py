@@ -1,13 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Посчитать количество слов в введёном с клавиатуры предложении.
+lst = [1, 3, 6, 9, 11, 11, 10, 8]
 
-sentence = input('Введите предложение из нескольких слов: ')
+for i in lst:
+    if i % 3 != 0:
+        print(i)
+        print(lst)
+        lst.remove(i)
+        print(lst)
 
-# Убираем повторяющиеся пробелы
-while sentence != sentence.replace('  ', ' '):
-    sentence = sentence.replace('  ', ' ')
-
-wordCount = len(sentence.split(' '))
-print('Количество слов: %d' % wordCount)
+print(lst)
