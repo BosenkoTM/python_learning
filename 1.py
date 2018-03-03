@@ -1,42 +1,61 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Дан текст:
-# Eh bien, mon prince. Gênes et Lucques ne sont plus que des apanages, des поместья, de la famille Buonaparte. Non, je vous préviens que si vous ne me dites pas que nous avons la guerre, si vous vous permettez encore de pallier toutes les infamies, toutes les atrocités de cet Antichrist (ma parole, j'y crois) — je ne vous connais plus, vous n'êtes plus mon ami, vous n'êtes plus мой верный раб, comme vous dites
-# Выведите все слова, встречающиеся в тексте, по одному на каждую строку.
-# Слова должны быть отсортированы по убыванию их частоты появления в тексте, а при одинаковой частоте появления — в лексикографическом порядке.
-# *Указание. После того, как вы создадите словарь всех слов, вам захочется отсортировать его по частоте встречаемости слова.
-# Желаемого можно добиться, если создать список, элементами которого будут кортежи из двух элементов: частота встречаемости слова и само слово.
-# Например, [(2, 'hi'), (1, 'what'), (3, 'is')]. Тогда стандартная сортировка будет сортировать список кортежей, при этом кортежи сравниваются по первому элементу,
-# а если они равны — то по второму. Это почти то, что требуется в задаче.*
+# В генеалогическом древе у каждого человека, кроме родоначальника, есть ровно один родитель.
+# Каждом элементу дерева сопоставляется целое неотрицательное число, называемое высотой. У родоначальника высота равна 0, у любого другого элемента высота на 1 больше, чем у его родителя.
+# Вам дано генеалогическое древо, определите высоту всех его элементов.
+# Программа получает на вход число элементов в генеалогическом древе N. Далее следует N−1 строка, задающие родителя для каждого элемента древа, кроме родоначальника. Каждая строка имеет вид имя_потомка имя_родителя.
+# Программа должна вывести список всех элементов древа в лексикографическом порядке. После вывода имени каждого элемента необходимо вывести его высоту.
 
-str = "Eh bien, mon prince. Gênes et Lucques ne sont plus que des apanages, des поместья, de la famille Buonaparte. Non, je vous préviens que si vous ne me dites pas que nous avons la guerre, si vous vous permettez encore de pallier toutes les infamies, toutes les atrocités de cet Antichrist (ma parole, j'y crois) — je ne vous connais plus, vous n'êtes plus mon ami, vous n'êtes plus мой верный раб, comme vous dites"
+inp = """
+Alexei Peter_I
+Anna Peter_I
+Elizabeth Peter_I
+Peter_II Alexei
+Peter_III Anna
+Paul_I Peter_III
+Alexander_I Paul_I
+Nicholaus_I Paul_I
+"""
 
-dic = {}
-str_arr = str.split()
-for word_number in range(len(str_arr)):
-    word = str_arr[word_number]
-    if word not in dic :
-        dic[word] = 1
-    else:
-        dic[word] += 1
+lines = inp.split("\n")
 
-list_for_sort = [(item[1], item[0]) for item in dic.items()]
+children = {}
+parents = {}
+kaiser = "" # самый главнюк
+for line in lines :
+    names = line.split()
+    if len(names) == 2 :
+        parent = names[1]
+        child = names[0]
+        # определяем у кого кто родитель
+        parents[child] = parent
+        # главнюка
+        if kaiser == "" or parent not in parents : # главнюка ещё не определили и тогда берём первого попавшегося человека или берем того, у кого нет родителей
+            kaiser = parent
+        # записываем кто кого родил
+        if parent not in children :
+            children[parent] = [child]
+        else:
+            children[parent].append(child)
+
+people_levels = {kaiser: 0} # первым вставляем главнюка
+if len(children) == 0 : # если детей никто не имел, то и дело с концом
+    print(people_levels)
+    exit()
+
+# функция выставляет уровень всем детям
+def set_level_to_children(parent: str) :
+    level = people_levels[parent] + 1 # вычисляем уровень детей по уровню родителя
+    for child in children[parent] :
+        people_levels[child] = level
+        if child in children : # если ребёнок сам был родителем
+            set_level_to_children(child)
+
+set_level_to_children(kaiser)
+
+list_for_sort = [(man, level) for man, level in people_levels.items()]
 
 list_for_sort.sort()
-list_for_sort.reverse()
 
-dic_for_group = {}
-
-for item in list_for_sort :
-    word_count = item[0]
-    word = item[1]
-    if word_count not in dic_for_group :
-        dic_for_group[word_count] = [word]
-    else:
-        dic_for_group[word_count].append(word)
-
-for key, words in dic_for_group.items() :
-    words.reverse()
-    print(key)
-    print(words)
+print(list_for_sort)
