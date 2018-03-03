@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from lesson_08_misc import lib
+from . import lib
 
 # Создайте функции:
 # *генерации двумерного массива случайных чисел с заданными размерами

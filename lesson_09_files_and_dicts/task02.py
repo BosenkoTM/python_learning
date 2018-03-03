@@ -9,8 +9,8 @@ import random
 randoms = [random.randrange(1, 1000, 1) for _ in range(100000)]
 
 uniq = {}
-for i in randoms :
-    if i not in uniq :
+for i in randoms:
+    if i not in uniq:
         uniq[i] = 1
     else:
         uniq[i] += 1

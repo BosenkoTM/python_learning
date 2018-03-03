@@ -14,9 +14,6 @@ if xInt < 100 or xInt > 999:
     print("Число не трехзначное")
     exit()
 
-
-print("Произведение цифр введёного числа ", comp)
-
 comp = 1
 while xInt != 0:
     comp *= xInt % 10
