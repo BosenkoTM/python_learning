@@ -10,5 +10,5 @@ def print_and_decr(i: int) -> int:
     if i > 1:
         print_and_decr(i)
 
-print_and_decr(821)
 
+print_and_decr(821)

@@ -12,5 +12,5 @@ def get_one_number(i: int) -> int:
         i = i // 10
         get_one_number(i)
 
-get_one_number(821)
 
+get_one_number(821)

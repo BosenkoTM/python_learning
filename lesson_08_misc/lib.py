@@ -1,5 +1,6 @@
 import random
 
+
 # генерации двумерного массива случайных чисел с заданными размерами
 def create_array(l: int, m: int) -> list:
     array = []
@@ -8,6 +9,7 @@ def create_array(l: int, m: int) -> list:
         array.append(list_r)
 
     return array
+
 
 # поиска максимальныъ чисел в каждой строке двумерного массива
 def find_max_in_rows(array: list) -> list:
@@ -22,6 +24,7 @@ def find_max_in_rows(array: list) -> list:
         result.append(max(row))
 
     return result
+
 
 # проверки любой переменной на то, что она содержит положительное целое число и приведение переменной к int
 def to_int(i) -> [int, bool]:
