@@ -2,7 +2,7 @@
 
 Мы практически всё прошли. Остались несколько крутых вещей, которые могут встретиться в практике.
 
-#### Декораторы
+### Декораторы
 http://devacademy.ru/posts/dekoratoryi-v-python/
 https://python-scripts.com/decorators
 https://pythonworld.ru/osnovy/dekoratory.html
@@ -12,52 +12,52 @@ https://habrahabr.ru/post/141501/
 
 Модуль time https://pythonworld.ru/moduli/modul-time.html
 
-##### №1
+#### №1
 Посчитать время выполнения функции с помощью самописного декоратора.
-##### №2
+#### №2
 Написать декоратор, выводящий время до начала и после окончания выполнения декорируемой функции.
 
-#### Магические методы классов
+### Магические методы классов
 https://pythonworld.ru/osnovy/peregruzka-operatorov.html
 
-##### №1
+#### №1
 Написать класс Point, реализуещий описание точки в декартовой системе координат. Определить как можно большее количество магических методов у класса Point для реализации арифметических и булевых операций в объектами этого класса.
 
-##### №2
+#### №2
 Реализовать тип данных boolean.
 
-##### №3
+#### №3
 Реализовать класс-коллекцию объектов класса Point. Реализовать методы добавления, удаления, чтения по индексу и поиска по значению элементов коллекции.
 
-#### Инкапсуляция, наследование, полиморфизм (для новичков)
+### Инкапсуляция, наследование, полиморфизм (для новичков)
 https://pythonworld.ru/osnovy/inkapsulyaciya-nasledovanie-polimorfizm.html
 https://docs.python.org/3.3/tutorial/classes.html
 
-#### Повторяем документирование
+### Повторяем документирование
 https://pythonworld.ru/osnovy/dokumentirovanie-koda-v-python-pep-257.html
 
-#### Менеджер пакетов pip
+### Менеджер пакетов pip
 https://pythonworld.ru/osnovy/pip.html
 
 Виртуальное окружение
 https://lancelote.gitbooks.io/intermediate-python/content/book/virtual_environment.html
 
-##### №1
+#### №1
 Поставить 3 пакета, выгрузить их список в файл, файл залить в git.
 
-#### Менеджеры контекста
+### Менеджеры контекста
 https://lancelote.gitbooks.io/intermediate-python/content/book/context_managers.html
 https://proft.me/2010/06/24/python-i-menedzher-konteksta/
 
 [Функция open](https://lancelote.gitbooks.io/intermediate-python/content/book/open_function.html)
 
-#### Абстракции списков/словарей/множеств
+### Абстракции списков/словарей/множеств
 https://lancelote.gitbooks.io/intermediate-python/content/book/comprehensions.html
 
-#### Анонимные функции
+### Анонимные функции
 https://lancelote.gitbooks.io/intermediate-python/content/book/lambdas.html
 
-#### *args и **kwargs
+### *args и **kwargs
 https://lancelote.gitbooks.io/intermediate-python/content/book/args_and_kwargs.html
 
 # Awesome materials for advanced students
