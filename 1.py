@@ -14,29 +14,27 @@
 # Далее в цикле нужно организовать ввод студентов и профессоров вперемешку.
 # Когда ввод будет закончен, нужно вывести информацию с помощью метода _show_data()_ обо всех людях.
 
-import math
-class Calc:
-    x = 0.0
-    def __init__(self, x):
-        self.x = x
-    def plus(self, p):
-        self.x += p
-    def minus(self, p):
-        self.x -= p
-    def mul(self, p):
-        self.x *= p
-    def dev(self, p):
-        self.x /= p
-    def sqrt(self):
-        self.x = self.x ** 0.5
-    def cos(self):
-        return math.cos(self.x)
 
-class SuperCalc(Calc):
-    y = 0.0
-    def set(self, y):
-        self.y = y
-    def get(self):
-        return self.y
-    def sum_x(self):
-        self.y += self.x
+class Person:
+    name = ""
+    fname = ""
+    tname = ""
+    def show_data(self):
+        print("ФИО {} {} {}".format(self.name, self.fname, self.tname))
+
+class Student(Person):
+    grade = 0
+    def show_data(self):
+        print("ФИО {} {} {}, средний бал {}".format(self.name, self.fname, self.tname, self.grade))
+
+class Professor(Person):
+    pub_count = 0
+    position = ""
+    age = 0
+    def show_data(self):
+        print("ФИО {} {} {} число публикаций  {}, должность {}, возраст {}".format(self.name, self.fname, self.tname, self.pub_count, self.position, self.age))
+
+list = [Student(), Student(), Professor(), Professor(), Student()]
+
+for p in list:
+    p.show_data()

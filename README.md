@@ -31,10 +31,3 @@
 Аня 
 
 
-https://pythonworld.ru/osnovy/dekoratory.html
-https://pythonworld.ru/osnovy/peregruzka-operatorov.html
-https://pythonworld.ru/osnovy/inkapsulyaciya-nasledovanie-polimorfizm.html
-https://pythonworld.ru/osnovy/dokumentirovanie-koda-v-python-pep-257.html
-pip
-
-https://pythonworld.ru/osnovy/with-as-menedzhery-konteksta.html
