@@ -1,66 +1,42 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# **Phone**: id, Фамилия, Имя, Отчество, Адрес, Номер кредитной карточки,
-# Дебет, Кредит, Время городских и междугородных разговоров.
-# Создать массив объектов. Вывести:
-# a) сведения об абонентах, у которых время внутригородских разговоров превышает заданное;
-# b) сведения об абонентах, которые пользовались междугородной связью;
-# c) сведения об абонентах в алфавитном порядке.
-# Создать классы, спецификации которых приведены ниже. Определить конструкторы . Определить дополнительно методы `__str__`.
-# Определить дополнительно методы в классе, создающие массив объектов. Задать критерий выбора данных и вывести эти данные на консоль.
+# Создайте класс с именем _Person_, содержащий три поля для хранения имени, фамилии и отчества.
+# В классе создайте функцию _show_data()_, выводящую на экран имя, фамилию и отчество.
+# Далее от класса _Person_ с помощью наследования создайте два класса: _Student_, _Professor_.
+# К классу _Student_ добавьте дополнительное поле, содержащее средний бал студента.
+# К классу _Professor_ три поля:
+# 1. число публикаций профессора,
+# 2. должность (тип - перечисление) - преподаватель, старший преподаватель, доцент, профессор,
+# 3. возраст.
+# Для каждого производного класса переопределите метод _show_data()_.
+# В основной программе определите массив.
+# Далее в цикле нужно организовать ввод студентов и профессоров вперемешку.
+# Когда ввод будет закончен, нужно вывести информацию с помощью метода _show_data()_ обо всех людях.
 
-import random
+import math
+class Calc:
+    x = 0.0
+    def __init__(self, x):
+        self.x = x
+    def plus(self, p):
+        self.x += p
+    def minus(self, p):
+        self.x -= p
+    def mul(self, p):
+        self.x *= p
+    def dev(self, p):
+        self.x /= p
+    def sqrt(self):
+        self.x = self.x ** 0.5
+    def cos(self):
+        return math.cos(self.x)
 
-class Phone:
-    id = 0  # id
-    fname = ""  # Фамилия
-    lname = ""  # Имя
-    tname = ""  # Отчество
-    address = ""  # Адрес
-    credit_card = 0  # Номер кредитной карточки
-    debit = 0.0 # Дебет
-    credit = 0.0  # Кредит
-    local_calls_time = 0  # Время городских разговоров
-    out_calls_time = 0  # Время междугородных разговоров
-
-    def __str__(self):
-        return 'Абонент ID: {} ФИО: {} Адрес: {}'.format(self.id, self.fname, self.lname, self.tname, self.address)
-
-    def fill_rand(self):
-        self.id = random.randrange(1, 1001, 1)
-        self.fname ="fname {}".format(self.id)
-        self.lname ="lname {}".format(self.id)
-        self.address ="address {}".format(self.id)
-        self.address ="address {}".format(self.id)
-        self.local_calls_time = random.randrange(1, 101, 1)
-        self.out_calls_time = random.randrange(1, 10, 1)
-        return self
-
-    @staticmethod
-    def create_list(size):
-        arr = []
-        for x in range(0, size):
-            arr.append(Phone().fill_rand())
-        return arr
-
-
-phones = Phone.create_list(10)
-
-print("сведения об абонентах, у которых время внутригородских разговоров превышает заданное")
-for onePhone in phones:
-    if onePhone.local_calls_time > 10:
-        print(onePhone)
-
-print("сведения об абонентах, которые пользовались междугородной связью")
-for onePhone in phones:
-    if onePhone.out_calls_time > 0:
-        print(onePhone)
-
-print("сведения об абонентах в алфавитном порядке")
-list_for_sort = [(onePhone.fname, onePhone) for onePhone in phones]
-
-list_for_sort.sort()
-
-for onePhone in list_for_sort:
-    print(onePhone[1])
+class SuperCalc(Calc):
+    y = 0.0
+    def set(self, y):
+        self.y = y
+    def get(self):
+        return self.y
+    def sum_x(self):
+        self.y += self.x

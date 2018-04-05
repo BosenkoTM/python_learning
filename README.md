@@ -1,3 +1,17 @@
+# Илучаем Python
+
+1. [GIT](lesson_01_git/README.md)
+2. [Переменные, форматирование строк](lesson_02/README.md)
+3. [Условия](lesson_03_if_else/README.md)
+4. [Циклы](lesson_04_cycles/README.md)
+5. [Работа со строками и модуль random](lesson_05/README.md)
+6. [Списки](lesson_06_list/README.md)
+7. [Функции](lesson_07_functions/README.md)
+8. [Кортежи, исключения, модули](lesson_08_misc/README.md)
+9. [Словари и файлы](lesson_09_files_and_dicts/README.md)
+10. [ООП](lesson_10_oop/README.md)
+11. [Наследование в ООП](lesson_11_inheritance/README.md)
+
 ### Список репозитариев
 
 Михаил https://github.com/Zarbul/Python-Learning/
@@ -17,11 +31,10 @@
 Аня 
 
 
-### Документация
+https://pythonworld.ru/osnovy/dekoratory.html
+https://pythonworld.ru/osnovy/peregruzka-operatorov.html
+https://pythonworld.ru/osnovy/inkapsulyaciya-nasledovanie-polimorfizm.html
+https://pythonworld.ru/osnovy/dokumentirovanie-koda-v-python-pep-257.html
+pip
 
-
-https://pyformat.info/
-
-https://rtfm.co.ua/books-translations/python_s_nulya/
-
-https://pythonworld.ru/
+https://pythonworld.ru/osnovy/with-as-menedzhery-konteksta.html
