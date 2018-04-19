@@ -7,6 +7,8 @@ http://zametkinapolyah.ru/servera-i-protokoly/chto-takoe-model-osi-etalonnaya-mo
 
 ### Протокол HTTP
 
+https://habrahabr.ru/post/215117/
+
 ## По базам
 
 Загуглить про "реляционная база данных". Прочесть несколько статей, понять принципы работы.
