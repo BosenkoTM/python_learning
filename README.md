@@ -11,6 +11,9 @@
 9. [Словари и файлы](lesson_09_files_and_dicts/README.md)
 10. [ООП](lesson_10_oop/README.md)
 11. [Наследование в ООП](lesson_11_inheritance/README.md)
+12. [Крутые штуки"](lesson_12_cool_things/README.md)
+13. [SQL и сети](lesson_13_sql_and_network/README.md)
+14. [SQL и джанго](lesson_14_sql_and_django/README.md)
 
 ### Список репозитариев
 
