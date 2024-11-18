@@ -17,8 +17,6 @@
 
 ### Список репозитариев
 
-Михаил https://github.com/Zarbul/Python-Learning/
-
 Сергей https://github.com/0mUltramar/Manual-snake
 
 Алексей https://github.com/drklauss/python_learning
