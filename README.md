@@ -1,4 +1,4 @@
-# Илучаем Python
+# Изучаем Python
 
 1. [GIT](lesson_01_git/README.md)
 2. [Переменные, форматирование строк](lesson_02/README.md)
